@@ -1,11 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<title>菜鸟教程(runoob.com)</title>
+    <meta charset="UTF-8">
+    <title>CSS 布局</title>
 </head>
+<style>
+.container{
+    height:200px;
+    width: 200px;
+    display: flex
+}
+.left{
+    background-color: red;
+    flex: 1;
+}
+.middle{
+    background-color: yellow;
+    flex: 1;
+}
+.right{
+    background-color: green;
+    flex: 1;
+}
+</style>
 <body>
-<h1>The first topic</h1>
-<p>The first paragragh</p>
+    <div class=container>
+        <div class=left></div>
+        <div class=middle></div>
+        <div class=right></div>
+    </div>
 </body>
 </html>
