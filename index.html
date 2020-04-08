@@ -3,17 +3,12 @@
 <head>
 <meta charset="utf-8">
 <title>菜鸟教程(runoob.com)</title>
-<script src="jquery-3.3.1.min.js"></script>
-<script>
-function change() {
-  $('img').attr('src', '2.jpg');
-}
-</script>
+
 </head>
 <body>
   <p>
-     一个图像4:
-     <img src="1.jpg" alt="Smiley face1" width="320" height="320" onclick="change()"></p>
+     一个图像5:
+     <img src="1.jpg" alt="Smiley face1" width="320" height="320" onclick="this.src = this.src.indexOf('1.jpg') == -1 ? '1.jpg' : '2.jpg';"></p>
 </body>
 
 
